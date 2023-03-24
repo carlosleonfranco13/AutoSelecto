@@ -51,7 +51,7 @@ li{
 }
 
 .header{
-    max-width: 1400px;
+    max-width: 1200px;
     height: 200px;
     margin: auto;
 }
@@ -84,8 +84,6 @@ li{
 
 main{
     height: 740px;
-}
-main .hero{
     max-width: 1024px;
     margin: auto;
 }
@@ -160,4 +158,16 @@ main .hero .catalogo a{
 }
 .slick-next:before, .slick-prev:before{
     font-size: 40px !important;
+}
+
+.filter{
+    width: 100%;
+}
+.filter h2{
+    color: var(--color-2);
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: var(--font-3);
+    font-weight: bold;
+    margin-top: 24px;
 }
