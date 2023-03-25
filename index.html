@@ -54,10 +54,15 @@
         </div>
       </nav>
     </header>
+
     <main>
+
       <div class="hero">
+
         <h1>Los mejores vehiculos usados y nuevos</h1>
+
         <div class="row">
+
             <div class="text-selling">
                 <p>
                 Ofrecemos una experiencia de compra
@@ -74,6 +79,7 @@
             </div>
 
             <div class="car-container">
+
                 <div class="my-car">
                     <div><img src="/assets/imgs/CX30.png"></div>
                     <div><img src="/assets/imgs/fortuner.png"></div>
@@ -89,14 +95,115 @@
                     <div><img src="/assets/imgs/swift.png"></div>
                     <div><img src="/assets/imgs/tracker.png"></div>
                     <div><img src="/assets/imgs/Vitara.png"></div>
-
                 </div>
+
             </div>
+
         </div>
+
       </div>
-      <div class="filter">
+
+      <div class="filter-title">
         <h2>Encuentra el carro de tus sueños</h2>
       </div>
+      <div class="filter-cotainer">
+        <form id="buscador">
+          <div class="row">
+            <div class="select-contain">
+              <label for="marca">Marca</label>
+              <select id="marca">
+                <option value="">Seleccione</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Renault">Renault</option>
+                <option value="Kia">Kia</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Ford">Ford</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="BMW">BMW</option>
+                <option value="BYD">BYD</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Audi">Audi</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Ford">Ford</option>
+              </select>
+            </div>
+            <div class="select-contain">
+              <label for="year">Año</label>
+              <select id="year">
+                <option value="">Seleccione</option>
+              </select>
+            </div>
+            <div class="select-contain">
+              <label for="minimo">Precio Min</label>
+              <select id="minimo">
+                <option value="">Seleccione</option>
+                <option value="15000000">15.000.000</option>
+                <option value="30000000">30.000.000</option>
+                <option value="40000000">40.000.000</option>
+                <option value="50000000">50.000.000</option>
+                <option value="60000000">60.000.000</option>
+                <option value="70000000">70.000.000</option>
+                <option value="80000000">80.000.000</option>
+                <option value="90000000">90.000.000</option>
+              </select>
+            </div>
+            <div class="select-contain">
+              <label for="maximo">Precio Máx</label>
+              <select id="maximo">
+                <option value="">Seleccione</option>
+                <option value="15000000">15.000.000</option>
+                <option value="30000000">30.000.000</option>
+                <option value="40000000">40.000.000</option>
+                <option value="50000000">50.000.000</option>
+                <option value="60000000">60.000.000</option>
+                <option value="70000000">70.000.000</option>
+                <option value="80000000">80.000.000</option>
+                <option value="90000000">90.000.000</option>
+              </select>
+            </div>
+          </div>
+            <div class="row">
+              <div class="select-contain">
+                <label for="puertas">Puertas</label>
+                <select id="puertas">
+                  <option value="">Seleccione</option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="select-contain">
+                <label for="transmision">Transmisión</label>
+                <select id="transmision">
+                  <option value="">Seleccione</option>
+                  <option value="automatico">Automática</option>
+                  <option value="manual">Manual</option>
+                </select>
+              </div>
+              <div class="select-contain">
+                <label for="color">Color</label>
+                <select id="color">
+                  <option value="">Seleccione</option>
+                  <option value="Negro">Negro</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Blanco">Blanco</option>
+                  <option value="Rojo">Rojo</option>
+                  <option value="Verde">Verde</option>
+                  <option value="Naranja">Naranja</option>
+                  <option value="Gris">Gris</option>
+                </select>
+              </div>
+            </div>
+        </form>
+
+        <h4>Resultados:</h4>
+        <div id="resultado"></div>
+
+      </div>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
@@ -110,5 +217,9 @@
             })
         });
     </script>
+
+    <script src="/js/db.js"></script>
+    <script src="/js/app.js"></script>
+
 </body>
 </html>
