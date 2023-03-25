@@ -1,0 +1,43 @@
+.header{
+    height: 120px;
+}
+.nav-bar{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+}
+.menu{
+    display: none;
+}
+.social-media{
+    display: none;
+}
+.icon-menu{
+    display: flex;
+}
+
+.text-selling{
+    display: none;
+}
+
+.hero .car-container{
+    width: 100%;
+}
+.hero .car-container img{
+    width: 100%;
+}
+button.slick-prev,
+button.slick-next{
+    display: none;    
+}
+.slick-next:before, .slick-prev:before{
+    display: none;
+}
+ul.slick-dots{
+    display: none;
+}
+
+#resultado{
+    padding: 12px;    
+}
